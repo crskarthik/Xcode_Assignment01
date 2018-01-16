@@ -1,0 +1,125 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+//Question 1
+var x:Int = 1 ,y:Int = 6 ,z:Int = 3;
+let first:Bool = true;
+let second:String = "Something";
+let third:Double = 12.48;
+
+//Question 2
+print(x,y,z,first,second,third, separator: "#", terminator: "**")
+print("")
+//Question 3
+print(Double(x+y+z)/3)
+
+//Question 4
+var data1 = [Int]()
+    data1 = [19,1,22,3,1,7,17,18,31]
+print(data1.sorted())
+
+//Question 5
+var data2 = [Int]()
+for num in stride(from: 100, to: 1000, by: +2){
+    data2.append(num)
+}
+data2.insert(111, at: 0)
+data2.insert(11001, at: 0)
+print(data2.count)
+
+//Question 6
+var sum = 0
+for val in data2{
+    if Double(val).truncatingRemainder(dividingBy: 3) == 0 {
+        sum += val
+    }
+}
+print(sum)
+
+//Question 7
+var data3 = [Int]()
+for _ in 1...20{
+    data3.append(Int(arc4random_uniform(20)))
+}
+print(data3)
+
+//Question 8
+for num in data3{
+    switch num {
+    case 1,2,3,7:
+        print("Beetle")
+    case 10...18:
+        print("Butterfly")
+    case 8,20:
+        print("Moth")
+    default:
+        print("Wasp")
+    }
+}
+
+//Question 9
+var data4 = [Int]()
+    data4 = [23,1,2,3,4,7,13,22,2,23,4]
+for num in data4{
+    if Double(num).truncatingRemainder(dividingBy: 2)==0 {
+        data4.remove(at: data4.index(of: num)!)
+    }
+}
+print(data4)
+
+//Question 10
+var data5 = [String]()
+    data5 = []
+data5 += ["Mom", "Jessie"]
+data5.append("Karthik")
+data5.insert("All about me", at: 0)
+print(data5)
+
+//Question 11
+print(sin(Double.pi/2))
+print(cos(Double.pi/2))
+
+print(sin(Double.pi))
+print(cos(Double.pi))
+
+print(sin((3*Double.pi)/2))
+print(cos((3*Double.pi)/2))
+
+print(sin(2*Double.pi))
+print(cos(2*Double.pi))
+
+//Question 12
+var tempSin:Double?
+var tempNum:Int?
+for num in 1...1000{
+    if tempSin == nil && tempNum == nil {
+        tempSin = sin(Double(num))
+    }else{
+        if tempSin! < sin(Double(num)) {
+            tempSin = sin(Double(num))
+            tempNum = num
+        }
+    }
+}
+print(tempNum!, tempSin!)
+
+//Question 13
+var test = [Int]() , primes = [Int]()
+for num in stride(from: 2, through: 1000, by: +1){
+    test.append(num)
+}
+while !test.isEmpty {
+let p = test.remove(at: 0)
+primes.append(p)
+for num in test{
+    if Double(num).truncatingRemainder(dividingBy: Double(p)) == 0{
+        test.remove(at: test.index(of: num)!)
+        
+    }
+}
+
+}
+print(test)
+print(primes)
+
