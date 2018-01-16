@@ -5,7 +5,7 @@ import UIKit
 //Question 1
 var x:Int = 1 ,y:Int = 6 ,z:Int = 3;
 let first:Bool = true;
-let second:String = "Something";
+let second:String = "/"Something";
 let third:Double = 12.48;
 
 //Question 2
