@@ -3,12 +3,23 @@
 import UIKit
 
 //Question 01
+func diff(_ value1:Double,_ value2:Double)->Double{
+    let diff:Double=value1-value2
+        return diff>=0.0 ? diff : -diff
+}
 func middling(first:Int,second:Int,third:Int) -> Int{
-    return (first+second+third)/3
+    let avg:Double=Double(first+second+third)/3.0
+    if(diff(Double(first), avg).isLess(than: diff(Double(second), avg))&&diff(Double(first), avg).isLess(than: diff(Double(third), avg))){
+        return first
+    }else if(diff(Double(second), avg).isLess(than: diff(Double(third), avg))){
+        return second
+    }else{
+        return third
+    }
 }
 
 //Question 02
-print(middling(first:1,second:2,third:5))
+print("Middle number of 1,2,5",middling(first:1,second:2,third:5))
 print(middling(first:5,second:1,third:2))
 print(middling(first:1,second:1000,third:1))
 print(middling(first:2,second:2,third:2))
@@ -17,7 +28,7 @@ print(middling(first:3,second:1,third:1))
 
 //Question 03
 func scrabbleScore(ofWord word:String) -> Int {
-   let charArray = Array(word)
+    let charArray = Array(word)
     var score = 0
     for char in charArray{
         switch char {
