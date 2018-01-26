@@ -3,9 +3,11 @@
 import UIKit
 
 //Question 01
+//Create a function middling that has three integer arguments first, second, third and returns the value that
+//is closest to the average of the three values. Example call: middling(first: 1, second: 2, third: 10)
 func diff(_ value1:Double,_ value2:Double)->Double{
     let diff:Double=value1-value2
-        return diff>=0.0 ? diff : -diff
+    return diff>=0.0 ? diff : -diff
 }
 func middling(first:Int,second:Int,third:Int) -> Int{
     let avg:Double=Double(first+second+third)/3.0
@@ -19,6 +21,13 @@ func middling(first:Int,second:Int,third:Int) -> Int{
 }
 
 //Question 02
+/*Invoke the middling function on each of the following sets of values.
+ 1, 2, 5
+ 5, 1, 2
+ 1, 1000, 1
+ 2, 2, 2
+ 3, 1, 2
+ 3, 1, 1 */
 print("Middle number of 1,2,5",middling(first:1,second:2,third:5))
 print(middling(first:5,second:1,third:2))
 print(middling(first:1,second:1000,third:1))
@@ -27,6 +36,7 @@ print(middling(first:3,second:1,third:2))
 print(middling(first:3,second:1,third:1))
 
 //Question 03
+/*Create a function scrabbleScore that takes a single string argument. Use an external name ofWord and an internal name of word. You return an integer value that is the basic scrabble score for the word. Each letter will have a value and you add all the values together. (Hint: You can iterate over the characters in a string.) Example call: scrabbleScore(ofWord: “TIME”)*/
 func scrabbleScore(ofWord word:String) -> Int {
     let charArray = Array(word)
     var score = 0
@@ -61,17 +71,25 @@ func scrabbleScore(ofWord word:String) -> Int {
 }
 
 //Question 04
+/*Invoke the scrabbleScore function on each of the following strings. “Hello”
+ “HELLO”
+ “JEL LO
+ “abc12d&*”
+ “UDMPWFKJZ”*/
 print(scrabbleScore(ofWord: "Hello"))
 print(scrabbleScore(ofWord: "HELLO"))
-print(scrabbleScore(ofWord: "JELLO"))
+print(scrabbleScore(ofWord: "JEL LO"))
 print(scrabbleScore(ofWord: "abc12d&"))
 print(scrabbleScore(ofWord: "UDMPWFKJZ"))
 
 //Question 05
-func oddsOfValue(_ check:Int,values variadic:Int...) -> Double {
+/*
+ Create a function oddsOfValue that has two arguments. The first argument will be named check and no external name. The second argument will have the name values and will be variadic. Return a double value that is the number of times check is in values divided by the count. Example call: oddsOfValue(4, values: 5, 4, 4, 3, 2, 1)
+ */
+func oddsOfValue(_ check:Int,values :Int...) -> Double {
     var checkInValues:Double = 0
     var count:Double = 0
-    for num in variadic{
+    for num in values{
         if check == num {
             checkInValues += 1
         }
@@ -81,6 +99,14 @@ func oddsOfValue(_ check:Int,values variadic:Int...) -> Double {
 }
 
 //Question 06
+/*
+ Invoke oddsOfValue on the following data.
+ 1, 1,1,1,1,1,1,1,1,1
+ 2, 1,1,1,1,1,1
+ 3, 1,1,2,1,2,1,3,2,1,1
+ 4, 4,1,4,2,4,4,3,3
+ 5, 5,15,1,5,1,2,1,3,1
+ */
 print(oddsOfValue(1, values:1,1,1,1,1,1,1,1,1))
 print(oddsOfValue(2, values: 1,1,1,1,1,1))
 print(oddsOfValue(3, values: 1,1,2,1,2,1,3,2,1,1))
@@ -88,6 +114,13 @@ print(oddsOfValue(4, values: 4,1,4,2,4,4,3,3))
 print(oddsOfValue(5, values: 5,15,1,5,1,2,1,3,1))
 
 //Question 07
+/*
+ Create a class AnnoyingKid that has the following
+ 1. Two stored properties count is an int and message is a String.
+ 2. A two argument Initializer.
+ 3. A method speakUp with no arguments that returns a String. Return message
+ concatenated together count times.
+ */
 class AnnoyingKid {
     var count:Int
     var message:String
@@ -105,6 +138,14 @@ class AnnoyingKid {
 }
 
 //Question 08
+/*
+ Create instances of AnnoyingKind
+ 1. kid1 with 3 and “hiya”
+ 2. kid2 with 4 and “Whatcha doing? “
+ 3. print kid1.speakUp() and kid2.speakUp()
+ 4. Change kid1’s message to “zup”
+ 5. print kid1.speakUp() and kid2.speakUp()
+ */
 var kid1 = AnnoyingKid(count: 3, message: "hiya")
 var kid2 = AnnoyingKid(count: 4, message: "Whatcha doing?")
 print(kid1.speakUp())
@@ -114,6 +155,21 @@ print(kid1.speakUp())
 print(kid2.speakUp())
 
 //Question 09
+/*
+ Create a struct MaybeLogic that represents truth values as double between 0 and 1. The truth values false and true are 0 and 1 respectively. A value of 0.75 would indicate something that is more likely true than false. Our class has the following:
+ 1. Property probability that is a double.
+ 2. An initializer with no arguments that sets probability to 0.0
+ 3. An initialize with one argument that sets probability to the argument.
+ 4. A method not that takes no arguments. It returns a new MaybeLogic with probability
+ that is 1.0 minus the self probability.
+ 5. A method and that takes a single argument other of type MaybeLogic. It returns a new
+ MaybeLogic with probability that is the product of the self and other probabilities.
+ 6. A method or that takes a single argument other of type MaybeLogic. It returns a new
+ MaybeLogic with probability that is the sum of the self and other probabilities minus the product.
+ Examples: if p1 has value 1/3 and p2 has value 1/2, then: p1.not() has value 1-1/3 = 2/3
+ p1.and(p2) has value 1/3 x 1/2 = 1/6
+ p1.or(p2) has value 1/3 + 1/2 - 1/6 = 2/3
+ */
 struct MaybeLogic {
     var probability:Double
     init() {
@@ -134,12 +190,30 @@ struct MaybeLogic {
 }
 
 //Question 10
+/*
+ Create instances of MaybeLogic
+ 1. p1 has value 1/3
+ 2. p2 has value 1/2
+ Page2  of3
+ 3. p3 has value 1
+ 4. p4 has value 0
+ */
 var p1=MaybeLogic(probability: 1/3)
 var p2=MaybeLogic(probability: 1/2)
 var p3=MaybeLogic(probability: 1)
 var p4=MaybeLogic(probability: 0)
 
 //Question 11
+/*
+ Compute and print
+ 1. not p3
+ 2. p1 and p2
+ 3. p1orp2
+ 4. p2 and p3
+ 5. p2 and p4
+ 6. p1orp3
+ 7. p1orp4
+ */
 print(p3.not())
 print(p1.and(other: p2))
 print(p1.or(other: p2))
@@ -149,6 +223,15 @@ print(p1.or(other: p3))
 print(p1.or(other: p4))
 
 //Question 12
+/*
+ Create a struct OddNumber that has:
+ 1. A private stored property that is an integer with the name _oddValue initialized to 1.
+ 2. A computed property named value that gets the backing value and on set will only
+ change _oddValue if the new value is odd.
+ 3. An initializer guarantees that _oddValue remains unchanged if the initial value is not
+ odd.
+ 4. Give code that demonstrates the correctness of your structure.
+ */
 struct oddNumber {
     private var _oddValue:Int = 1
     var value:Int{
@@ -161,14 +244,16 @@ struct oddNumber {
             }
         }
     }
-    init() {
-        if self._oddValue%2 == 0 {
+    init(_ newval:Int) {
+        if newval%2 == 0 {
             self._oddValue=1
+        }else{
+            self._oddValue = newval
         }
     }
 }
 
-var o1=oddNumber()
+var o1=oddNumber(6)
 print(o1.value)
 o1.value=3
 print(o1.value)
