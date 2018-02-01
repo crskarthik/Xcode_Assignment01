@@ -57,7 +57,6 @@ class ViewController: UIViewController {
             if incSeq[incSeq.count-1]>high {
                incSeq.remove(at: incSeq.count-1)
             }
-            print(incSeq)
             for num in incSeq{
                 incSum+=num
             }
