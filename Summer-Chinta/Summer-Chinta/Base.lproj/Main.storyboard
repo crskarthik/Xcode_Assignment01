@@ -37,7 +37,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkG-pU-4Hb">
-                                <rect key="frame" x="15" y="336" width="397" height="53"/>
+                                <rect key="frame" x="15" y="319" width="397" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="9q2-ix-sYh"/>
                                 </constraints>
@@ -46,7 +46,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPv-zW-juo">
-                                <rect key="frame" x="15" y="397" width="397" height="62"/>
+                                <rect key="frame" x="15" y="380" width="397" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="pKj-GF-U3D"/>
                                 </constraints>
@@ -55,7 +55,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dD-I4-P1h">
-                                <rect key="frame" x="15" y="509" width="397" height="75"/>
+                                <rect key="frame" x="15" y="492" width="397" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="FjZ-Tz-QS3"/>
                                     <constraint firstAttribute="height" constant="75" id="W0K-oh-RQq"/>
@@ -88,8 +88,8 @@
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="29"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Instructions:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnh-Kg-DfT">
-                                <rect key="frame" x="15" y="658" width="132" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Instructions:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnh-Kg-DfT">
+                                <rect key="frame" x="20" y="635" width="132" height="20"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -112,15 +112,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1. Please enter low and high value to which computation must take place." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsY-JU-BoX">
-                                <rect key="frame" x="15" y="665" width="356" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="10"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2f6-sl-nAr">
-                                <rect key="frame" x="15" y="461" width="397" height="40"/>
+                                <rect key="frame" x="15" y="444" width="397" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Fay-gU-uzu"/>
                                 </constraints>
@@ -129,7 +122,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ai-qM-5I4">
-                                <rect key="frame" x="117" y="614" width="181" height="36"/>
+                                <rect key="frame" x="117" y="597" width="181" height="36"/>
                                 <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="OcL-ol-53P"/>
@@ -142,6 +135,12 @@
                                     <action selector="BTN:" destination="BYZ-38-t0r" eventType="touchDown" id="1W8-tU-0hN"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1. Please enter low and high value to which computation must take place." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsY-JU-BoX">
+                                <rect key="frame" x="20" y="635" width="348.33333333333331" height="60"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -164,7 +163,8 @@
                             <constraint firstItem="3uc-5t-FJK" firstAttribute="top" secondItem="9RY-eS-7Oc" secondAttribute="bottom" constant="17" id="DwP-8Z-W2t"/>
                             <constraint firstItem="2f6-sl-nAr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="F55-11-QXc"/>
                             <constraint firstItem="xCV-Hk-j4y" firstAttribute="top" secondItem="55W-tX-YQ1" secondAttribute="bottom" constant="17" id="FjX-On-dYw"/>
-                            <constraint firstItem="DkG-pU-4Hb" firstAttribute="top" secondItem="JgH-fE-V9p" secondAttribute="bottom" constant="19" id="GO9-l5-Prf"/>
+                            <constraint firstItem="DkG-pU-4Hb" firstAttribute="top" secondItem="JgH-fE-V9p" secondAttribute="bottom" constant="2" id="GO9-l5-Prf"/>
+                            <constraint firstItem="TsY-JU-BoX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Hde-jr-I2z"/>
                             <constraint firstItem="3dD-I4-P1h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="MI7-Fw-zai"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2f6-sl-nAr" secondAttribute="trailing" constant="2" id="MUh-Za-PXU"/>
                             <constraint firstItem="55W-tX-YQ1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ofb-Ez-wEt"/>
