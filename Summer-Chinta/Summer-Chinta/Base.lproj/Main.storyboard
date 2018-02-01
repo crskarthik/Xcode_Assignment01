@@ -135,8 +135,8 @@
                                     <action selector="BTN:" destination="BYZ-38-t0r" eventType="touchDown" id="1W8-tU-0hN"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1. Please enter low and high value to which computation must take place." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsY-JU-BoX">
-                                <rect key="frame" x="20" y="635" width="348.33333333333331" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1. Please enter low and high value to which computation must take place." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsY-JU-BoX">
+                                <rect key="frame" x="20" y="657" width="368" height="20"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -156,6 +156,7 @@
                             <constraint firstItem="JgH-fE-V9p" firstAttribute="top" secondItem="SkE-5O-JkB" secondAttribute="bottom" constant="17" id="9IH-30-OQr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3dD-I4-P1h" secondAttribute="trailing" constant="2" id="9Wc-Wz-RfM"/>
                             <constraint firstItem="Nnh-Kg-DfT" firstAttribute="top" secondItem="4ai-qM-5I4" secondAttribute="bottom" constant="2" id="AfM-e2-XeH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GPv-zW-juo" secondAttribute="trailing" constant="2" id="AiD-hV-y6V"/>
                             <constraint firstItem="gMf-dB-bJw" firstAttribute="top" secondItem="sWD-dd-SFX" secondAttribute="bottom" constant="17" id="C7s-V5-xAw"/>
                             <constraint firstItem="GPv-zW-juo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="D30-FW-rnm"/>
                             <constraint firstItem="3uc-5t-FJK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="D6c-D5-YKf"/>
@@ -189,6 +190,7 @@
                             <constraint firstItem="JgH-fE-V9p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="l2t-sd-oJX"/>
                             <constraint firstItem="3dD-I4-P1h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="nwZ-jA-IAt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9RY-eS-7Oc" secondAttribute="trailing" constant="15" id="p6t-O7-HCv"/>
+                            <constraint firstItem="TsY-JU-BoX" firstAttribute="top" secondItem="Nnh-Kg-DfT" secondAttribute="bottom" constant="2" id="rOY-Y2-kXc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gMf-dB-bJw" secondAttribute="trailing" constant="15" id="rpx-vu-sxG"/>
                             <constraint firstItem="GPv-zW-juo" firstAttribute="width" secondItem="DkG-pU-4Hb" secondAttribute="width" id="tZf-X6-GtL"/>
                             <constraint firstItem="2f6-sl-nAr" firstAttribute="top" secondItem="GPv-zW-juo" secondAttribute="bottom" constant="2" id="toa-bF-NI2"/>

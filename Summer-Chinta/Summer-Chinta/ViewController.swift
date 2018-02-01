@@ -60,7 +60,7 @@ class ViewController: UIViewController {
             for num in incSeq{
                 incSum+=num
             }
-            if Int(TFSkipVal.text!) == nil {
+            if Int(TFSkipVal.text!) == nil || Int(TFSkipVal.text!)!<0 {
                 LBLSkipSum.text=""
                 LBLSkipOutput.text=""
             }else{
